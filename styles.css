@@ -1,0 +1,30 @@
+.Document{
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-areas: "head head"
+                         "nav main"
+                         "nav foot";
+    grid-template-rows: 50px auto auto;
+    grid-template-columns: 150px 1fr;           
+}
+
+.Document > header{
+    grid-area:head;
+    background-color: #6EE7B7;
+}
+
+.Document > nav{
+    grid-area:nav;
+    background-color: #A7F3D0;
+}
+
+.Document > main{
+    grid-area:main;
+    background-color:white;
+}
+
+.Document > footer{
+    grid-area:foot;
+    background-color: #6EE7B7;
+}

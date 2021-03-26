@@ -1,13 +1,27 @@
+:root {
+    --primary-colour:#3B82F6;
+    --green200-colour:#BBF7D0;
+    --red200-colour:#FECACA;
+    --dark-gray:#57534E;
+    --light-blue:#DBEAFE;
+    --yellow200-colour:#FDE68A;
+    --purple300-colour:#C4B5FD;
+    --yellow400-colour:#FBBF24;
+    
+}
+/*-----------------------grid*/
+
 .Document{
     display: grid;
     width: 100%;
-    height: 250px;
+    height: 100%;
     grid-template-areas: "head head"
                          "nav main"
                          "nav foot";
     grid-template-rows: 50px auto auto;
     grid-template-columns: 150px 1fr;           
 }
+
 
 .Document > header{
     grid-area:head;
@@ -27,4 +41,218 @@
 .Document > footer{
     grid-area:foot;
     background-color: #6EE7B7;
+}
+/*---------------------container*/
+
+.demo{
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 0.5rem;
+    
+}
+
+/*---------------------alerts*/
+
+
+.alert{
+    border: 1px solid transperent;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0 ;
+    max-width: 80%;
+    position: relative;
+}
+
+.alert-sucess{
+    background-color:var(--green200-colour);
+    color: ;
+}
+
+.alert-failure{
+    background-color:var(--red200-colour);
+    color: ;
+}
+
+.alert-notification{
+    background-color:var(--yellow200-colour);
+    color: ;
+}
+
+/*----------------------buttons*/
+
+.btn{
+    outline:none;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 3px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color:0.2s, color:0.2s;
+}
+
+.btn-primary{
+    background-color: var(--yellow200-colour);
+
+}
+
+.btn-secondary{
+    border-color: var(--yellow200-colour);
+    background-color: transparent;
+
+}
+
+.btn-secondary:hover{
+    background-color: var(--yellow200-colour);
+}
+
+.btn-rounded-primary{
+    border-radius: 0.5rem;
+    background-color: var(--yellow200-colour);
+
+}
+
+.btn-rounded-secondary{
+    border-radius: 0.5rem;
+    border-color: var(--yellow200-colour);
+    background-color: transparent;
+
+}
+
+.btn-rounded-secondary:hover{
+    background-color: var(--yellow200-colour);
+}
+
+/*----------------------------Cards*/
+
+.card{
+    display:flex;
+    flex-direction: column;
+    margin:1rem 0 ;
+    border: 1px solid black;
+    max-width: 250px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+.card-body{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-title{
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 0;
+
+}
+
+.card-text{
+    letter-spacing: 1px;
+    flex-grow: 1;
+
+}
+
+.card-dismiss{
+    
+}
+
+/*---------------------------------avatars*/
+
+.avatar{
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    /* position: relative; */
+
+}
+
+.avatar-sm{
+    height: 2rem;
+    width: 2rem;
+
+}
+
+.avatar-md{
+    height: 3.5rem;
+    width: 3.5rem;
+
+}
+
+.avatar-lr{
+    height: 4.5rem;
+    width: 4.5rem;
+
+}
+
+.avatar-xl{
+    height: 5.5rem;
+    width: 5.5rem;
+
+}
+
+/*-------------------------typography*/
+
+.text-xl{
+font-size: 2.5rem;
+}
+
+.text-lr{
+    font-size: 2rem;
+}
+
+.text-md{
+    font-size: 1.5rem;
+}
+
+.text-sm{
+    font-size: 0.75rem;
+}
+
+.text-xs{
+    font-size: 0.5rem;
+}
+    
+.input{
+    display: flex;
+    justify-content: space-evenly;
+    padding:0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.input:focus{
+
+    outline: none !important;
+    border:1px solid var(--yellow400-colour);
+    box-shadow: 0 0 9px var(--yellow400-colour);
+}
+
+/*-----------------------------------------Badge*/
+
+.badge{
+    
+    border: 1px solid black;
+    padding: 0.5rem;
+    
+    
+}
+
+.badge-anchorTopleft{
+    position:relative;
+    top: -20rem;
+    left: 0.5rem;
+    background-color: gray;
+
+}
+
+.badge-avatar{
+
 }

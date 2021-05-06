@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+ 
+body{
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+
+}
+
 :root {
     --primary-colour:#3B82F6;
     --green200-colour:#BBF7D0;
+    --green50-colour:#ECFDF5;
+    --green100-colour:#D1FAE5;
     --red200-colour:#FECACA;
     --dark-gray:#57534E;
     --light-blue:#DBEAFE;
     --yellow200-colour:#FDE68A;
     --purple300-colour:#C4B5FD;
     --yellow400-colour:#FBBF24;
+    --warmgreay-colour:#1C1917;
+
     
 }
 /*-----------------------grid*/
@@ -18,8 +30,8 @@
     grid-template-areas: "head head"
                          "nav main"
                          "nav foot";
-    grid-template-rows: 50px auto auto;
-    grid-template-columns: 150px 1fr;           
+    grid-template-rows: 5rem auto auto;
+    grid-template-columns: 9rem 1fr;           
 }
 
 
@@ -50,8 +62,71 @@
     margin-left: 2rem;
     margin-right: 2rem;
     border-radius: 0.5rem;
+    background-color: var(--green50-colour);
     
 }
+
+.container-text{
+    border: 1px solid black;
+    max-width:30rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color:var(--green100-colour);
+    margin:auto;
+    margin-top: 1rem;
+
+}
+
+.container-default{
+    border: 1px solid black;
+    max-width:30rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin:auto;
+    margin-top: 1rem;
+    background-color:var(--green100-colour);
+
+}
+
+.container-avatar{
+    border: 1px solid black;
+    max-width:17rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin:auto;
+    margin-top: 1rem;
+    background-color:var(--green100-colour);
+
+}
+
+.container-buttons{
+    border: 1px solid black;
+    max-width:35rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin:auto;
+    margin-top: 1rem;
+    background-color:var(--green100-colour);
+    font:bolder;
+
+}
+
+.container-cards{
+    border: 1px solid black;
+    max-width: 50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin:auto;
+    margin-top: 1rem;
+    background-color:var(--green100-colour);
+
+}
+
+
 
 /*---------------------alerts*/
 
@@ -161,6 +236,9 @@
 }
 
 .card-dismiss{
+    position: relative;
+    top: -20rem;
+    right: 0.5rem;
     
 }
 
@@ -201,7 +279,7 @@
 /*-------------------------typography*/
 
 .text-xl{
-font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .text-lr{
@@ -249,10 +327,70 @@ font-size: 2.5rem;
     position:relative;
     top: -20rem;
     left: 0.5rem;
+    
+
+}
+
+.badge-circle{
+    
+}
+
+.badge-colour-gray{
     background-color: gray;
+}
+
+
+
+
+/*-----------------------------------------------Lists*/
+
+.lists{
+    list-style: none;
+    padding: 2rem;
+    font-size: large;
+    text-decoration: none;
+    color: var(--warmgreay-colour);
+}
+
+.lists link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*-----------------------------------------------------maargin*/
+
+.margin-l{
+    margin-left: 2.5rem;
 
 }
 
-.badge-avatar{
-
+.margin-auto{
+    margin:auto;
 }
+
+.margin-a{
+    margin:2rem;
+}
+
+
+/*-------------------------------------------------padding*/
+.pad-1{
+    padding:1rem;
+}
+
+.pad-1_5{
+    padding: 1.5;
+}
+
+.pad-2{
+    padding: 2rem;
+}
+
+
+.flex{
+    display:flex;
+    justify-content: center;
+}
+
